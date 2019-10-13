@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class Resources{ //资源类
 	
-	private int flag = 1 ;
+	private int flag = 1 ; //定以一个标志位，A：1，B:2，C:3
 	private Lock lock = new ReentrantLock();
 	private Condition condition1 = lock.newCondition();
 	private Condition condition2 = lock.newCondition();
